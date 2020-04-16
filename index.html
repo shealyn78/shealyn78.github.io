@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html language="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #003300;
+  font-family: candara;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px;
+  background: #e6e600;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: candara;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  background-color: #000000;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #003300;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+a:link {color: green;}
+
+a:hover {color: black;}
+
+a:visited {color: green;}
+
+img {max-height: 100%;
+max-width: 100%;}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Twenty One Pilots</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+ <img src="https://www.nme.com/wp-content/uploads/2018/07/21pilots-696x442.jpg"/>
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Shealyn Sommers. All rights reserved.
+</footer>
+
+</body>
+</html>
