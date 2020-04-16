@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html language="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #003300;
+  font-family: candara;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 900px;
+  background: #e6e600;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: candara;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 900px;
+  background-color: #000000;
+  text-align: center;
+  font-family: candara;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #003300;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+a:link {color: green;}
+
+a:hover {color: black;}
+
+a:visited {color: green;}
+
+img {max-height: 100%;
+max-width: 100%;}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Twenty One Pilots</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      <li><img src="https://img.pngio.com/twenty-one-pilots-press-page-twenty-one-pilots-logo-png-1188_1188.png"/></li>
+    </ul>
+  </nav>
+  
+  <article style="color:yellow;">
+ <img src="https://www.rocksound.tv/assets/uploads/TWENTYONEPILOTS_ROCKSOUND_BRADHEATON2018_03.jpg"/>
+ <p>Twenty One Pilots was started in Tyler Joseph's basement in 2009. In the band's infancy, its members consisted of Joseph as the lead singer playing the piano and ukulele, Nick Thomas playing the bass guitar, and Chris Salih playing the drums.</p>
+ <p>Currently, this Grammy award-winning band consists of Tyler Joseph as the lead singer playing the piano, ukulele, bass guitar, and electric guitar. And Josh Dun on the drums and trumpet. </p>
+ <p>Twenty One Pilots independently released two albums before they were signed to the label Fueled by Ramen. With their label, they've released three studio albums, all of which achieved much success.</p>
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Shealyn Sommers. All rights reserved.
+</footer>
+
+</body>
+</html>
