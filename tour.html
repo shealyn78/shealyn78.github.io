@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html language="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #003300;
+  font-family: candara;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1400px;
+  background: #e6e600;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: candara;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1400px;
+  background-color: #000000;
+  text-align: center;
+  font-family: candara;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #003300;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+a:link {color: green;}
+
+a:hover {color: black;}
+
+a:visited {color: green;}
+
+img {max-height: 100%;
+max-width: 100%;}
+
+p {color: yellow;}
+
+ol {color: yellow;
+text-align: left;}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Twenty One Pilots</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      <li><img src="https://img.pngio.com/twenty-one-pilots-press-page-twenty-one-pilots-logo-png-1188_1188.png"/></li>
+    </ul>
+  </nav>
+  
+  <article>
+ <h1 style="font-size:50px;color:yellow;border:5px dotted yellow;">Tour</h1>
+ 
+ <table align="center" style="color:yellow;font-size:20px;">
+ 
+ <tr>
+ <td>5/22-5/23 - TECATE EMBLEMA FESTIVAL 2020 - MEXICO CITY, MEXICO</td>
+ </tr>
+ 
+ <tr>
+ <td>6/19 - PINKPOP FESTIVAL 2020 - LANDGRAAF, NETHERLANDS</td>
+ </tr>
+ 
+ <tr>
+ <td>6/25 - RDS ARENA - DUBLIN, IRELAND</td>
+ </tr>
+ 
+ <tr>
+ <td>6/25-6/28 - OPEN AIR ST. GALLEN 2020 - ST. GALLEN, SWITZERLAND</td>
+ </tr>
+ 
+ <tr>
+ <td>7/2 - OPEN'ER FESTIVAL 2020
+GDYNIA-KOSAKOWO AIRPORT - GDYNIA, POLAND</td>
+ </tr>
+ 
+ <tr>
+ <td>7/4 - ROCK WERCHTER 2020 - ROTSELAAR, BELGIUM</td>
+ </tr>
+ 
+ <tr>
+ <td>7/5 - MAIN SQUARE FESTIVAL 2020 - ARRAS, FRANCE</td>
+ </tr>
+ 
+ <tr>
+ <td>7/7-7/12 - ATLAS WEEKEND 2020
+EXPOCENTER OF UKRAINE - KIEV, UKRAINE</td>
+ </tr>
+ 
+ <tr>
+ <td>7/8 - MAD COOL FESTIVAL 2020
+IFEMA FERIA DE MADRID - MADRID, SPAIN</td>
+ </tr>
+ 
+ <tr>
+ <td>7/12 - VTB ARENA - MOSCOW, RUSSIAN FEDERATION</td>
+ </tr>
+ 
+ <tr>
+ <td>7/15-7/18 - COLOURS OF OSTRAVA 2020 - OSTRAVA, CZECH REPUBLIC</td>
+ </tr>
+ 
+ <tr>
+ <td>7/15-7/19 - ELECTRIC CASTLE FESTIVAL 2020 - CLUJ-NAPOCA, ROMANIA</td>
+ </tr>
+ </table>
+ 
+ 
+  <h1 style="font-size:50px;color:yellow;border:5px dotted yellow;">Buy Tickets</h1>
+  
+<iframe src="https://www.ticketmaster.com" height=500 width=700></iframe>
+ 
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Shealyn Sommers. All rights reserved.
+</footer>
+
+</body>
+</html>
